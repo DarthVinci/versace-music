@@ -5,10 +5,148 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Conéctate con nosotros">
+  <meta property="og:description"
+    content="Síguenos y recibe actualizaciones en tu red social favorita">
+  <meta property="twitter:title" content="Conéctate con nosotros">
+  <meta property="twitter:description"
+    content="Síguenos y recibe actualizaciones en tu red social favorita">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Versace Music</title>
 </head>
 
 <body>
+
+  <main class="page-container">
+    <div class="card">
+      <img src="./img/versace-cover.png" alt="" class="card__cover">
+      <div class="card__header">
+        <h1 class="title">Conéctate con nosotros en las redes sociales</h1>
+        <p class="subtitle">Síguenos y recibe actualizaciones en tu red social favorita</p>
+      </div>
+      <ul class="links">
+        <li>
+          <a href="https://www.facebook.com/versacemusic" class="link" target="_blank">
+            <div class="link__icon fb-icon-bg">
+              <ion-icon name="logo-facebook" class="icon-adjust-size"></ion-icon>
+            </div>
+            <div class="link__content">
+              <p class="text-md">Facebook</p>
+              <span class="text-sm">Encuéntranos en Facebook</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com/versacemusicoficial" class="link" target="_blank">
+            <div class="link__icon ig-icon-bg">
+              <ion-icon name="logo-instagram" class="icon-adjust-size"></ion-icon>
+            </div>
+            <div class="link__content">
+              <p class="text-md">Instagram</p>
+              <span class="text-sm">Síguenos en Instagram</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/+523521237272" class="link" target="_blank">
+            <div class="link__icon wp-icon-bg">
+              <ion-icon name="logo-whatsapp" class="icon-adjust-size"></ion-icon>
+            </div>
+            <div class="link__content">
+              <p class="text-md">WhatsApp</p>
+              <span class="text-sm">Damián Guardado</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/+523525294972" class="link" target="_blank">
+            <div class="link__icon wp-icon-bg">
+              <ion-icon name="logo-whatsapp" class="icon-adjust-size"></ion-icon>
+            </div>
+            <div class="link__content">
+              <p class="text-md">WhatsApp</p>
+              <span class="text-sm">Jessy Cano</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="card__footer" id="btn-share">
+        <button class="btn-share">Compartir esta página</button>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="modal-backdrop"> </div>
+  <div class="modal-share" id="modal-share">
+
+    <div>
+      <h6 class="text-md mb-1">Compartir página</h6>
+      <div class="modal-share__close" id="modal-close">
+        <ion-icon name="close-outline" class="icon fb-icon icon-adjust-size"></ion-icon>
+      </div>
+
+      <ul class="links">
+        <li>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//versace-music.netlify.app&t=Conéctate con nosotros"
+            class="modal-share__item" target="_blank">
+            <ion-icon name="logo-facebook" class="icon fb-icon icon-adjust-size"></ion-icon>
+            <div class="link__content">
+              <p class="text-md">Facebook</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/intent/tweet?text=https%3A//versace-music.netlify.app"
+            class="modal-share__item" target="_blank">
+            <ion-icon name="logo-twitter" class="icon tw-icon icon-adjust-size"></ion-icon>
+            <div class="link__content">
+              <p class="text-md">Twitter</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="whatsapp://send?text=https://versace-music.netlify.app" class="modal-share__item"
+            target="_blank">
+            <ion-icon name="logo-whatsapp" class="icon wp-icon icon-adjust-size"></ion-icon>
+            <div class="link__content">
+              <p class="text-md">WhatsApp</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:?body=https://versace-music.netlify.app" class="modal-share__item"
+            target="_blank">
+            <ion-icon name="mail-outline" class="icon icon-adjust-size"></ion-icon>
+            <div class="link__content">
+              <p class="text-md">Email</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="modal-share__item" onclick="copyLink()">
+            <ion-icon name="copy-outline" class="icon icon-adjust-size"></ion-icon>
+            <div class="link__content">
+              <input class="modal-share__input hidden" value="https://versace-music.netlify.app"
+                readonly id="input-clipboard">
+              <div class="link__content">
+                <p class="text-md">Copiar enlace al portapapeles</p>
+              </div>
+            </div>
+          </a>
+          <div class="hidden" id="hidden-text">
+            <span class="text-sm">¡Enlace copiado!</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

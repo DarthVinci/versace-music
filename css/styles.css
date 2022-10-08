@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__cover {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.card__header {
+  width: 100%;
+  height: auto;
+  background-color: rgb(68, 127, 182);
+  padding: 30px;
+}
+
+.title {
+  color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  color: rgba(255, 254, 254, 0.7);
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+}
+
+.text-md {
+  color: #000;
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+}
+
+.text-sm {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto-Regular;
+  font-size: 0.875rem;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.link {
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  text-decoration: none;
+}
+
+.link__icon {
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5em;
+}
+
+.icon-adjust-size {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card__footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 0.5em;
+}
+
+.fb-icon-bg {
+  background-color: #3a5897;
+}
+
+.fb-icon {
+  color: #3a5897;
+}
+
+.ig-icon-bg {
+  background-color: #dd2a7b;
+}
+
+.tw-icon-bg {
+  background-color: #1da1f2;
+}
+
+.tw-icon {
+  color: #1da1f2;
+}
+
+.wp-icon-bg {
+  background-color: #25d366;
+}
+
+.wp-icon {
+  color: #25d366;
+}
+
+.btn-share {
+  background-color: #dd2a7b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto-Regular;
+  height: 40px;
+  width: 60%;
+}
+
+.modal-backdrop {
+  background-color: #000;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.modal-backdrop.visible {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.modal-share {
+  background-color: #fff;
+  box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+  -webkit-box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+  -moz-box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+  min-height: 400px;
+  left: 50%;
+  padding: 2em;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.modal-share.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-share__item {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  padding: 1em 0em;
+  text-decoration: none;
+}
+
+.modal-share__input {
+  width: 0%;
+  margin: 0 0.5em;
+  display: none;
+}
+
+.modal-share__close {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .page-container {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+    height: auto;
+    margin: 100px 0;
+    width: 600px;
+    -webkit-box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 1px -1px 23px -8px rgba(0, 0, 0, 0.60);
+  }
+
+
+
+}
